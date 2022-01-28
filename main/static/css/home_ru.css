@@ -126,6 +126,39 @@ h1,h2,h3,h4,h5 {margin: 0}
     opacity: 1;
 }
 
+/* Nav language */
+.nav__language{
+    display:inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+    
+    transition: color 0.1s linear;
+}
+
+.nav__language::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__language:hover::after{
+    opacity: 1;
+}
 
 /* Slider */
 .slider {
