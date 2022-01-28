@@ -1,0 +1,35 @@
+{% extends 'main/language_ru/base_ru.html' %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/contacts.css' %}"/>
+{% endblock %}
+
+
+{% block title %}
+Спасибо!
+{% endblock %}
+
+{% block language %}
+	<a class ="nav__link" href="{% url 'say_thanks' %}">ENG</a>
+{% endblock language %}
+
+{% block content %}
+<section class="section">
+    <div class="section_header">
+        <h2 class="section_title">Спасибо за Ваше сообщение, <br> {{ author_name }} !</h2>
+    </div>
+
+    <div class="section_item">
+        <div class="section_text"><p>Вы будете перенаправлены на предыдущую страницу через 5 секунд.</p></div>
+    </div>
+    
+    <script>
+        // redirect after 7 second script
+        window.setTimeout(function() {
+            window.location.href = 'contacts_test_ru';
+        }, 7000);
+    </script>
+
+</section>
+{% endblock %}

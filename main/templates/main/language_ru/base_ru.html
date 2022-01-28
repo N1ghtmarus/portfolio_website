@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE HTML>
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="{% static 'css/home_ru.css' %}"/>
+  {% block extrahead %}{% endblock %}
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" type="image/png" href="{% static 'images/logos/rounded_logo.png' %}"/>
+	<title>{% block title %}base{% endblock %}</title>
+</head>
+<body>
+  <header class="header">
+		<div class="container">
+			<div class="header_inner">
+				<a class="header__logo" href="{% url 'home_ru' %}">Appn</a>
+				<nav class="nav">
+					<a class ="nav__link" href="{% url 'about_ru' %}">Об авторе</a>
+					<a class ="nav__link" href="{% url 'projects_ru'%}">Проекты</a>
+					<a class ="nav__link" href="{% url 'contacts_test_ru'%}">Контакты</a>
+					{% block language %}
+					<a class ="nav__link" href="">RU/ENG</a>
+					{% endblock language %}
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+{% block content %}{% endblock %}
+
+</body>

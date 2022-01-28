@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+{% endblock %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block language %}
+	<a class ="nav__link" href="{% url 'about_ru' %}">RU</a>
+{% endblock language %}
+
+{% block content %}
+<section class="section">
+
+    <div class="section_header">
+        <h2 class="section_title">About me</h2>
+    </div>
+    
+    <div class="section_item">
+        <div class="section_text">
+            <p>My name is Arkhip Petin and I am independently studying the IT sphere, my main knowledge is concentrated in the field of backend development. Of the acquired skills, I can note:</p>
+            
+            <ul>
+                <li>Knowledge of Python at the junior level. In development, I used libraries such as: beautifulsoup, lxml, telebot, turtle, pandas, etc.</li>
+                <li>Worked with Django</li>
+                <li>Skills to work with Linux, Bash, Git, SQl, Jupyter notebook</li>
+                <li>Skills in front-end development (HTML, CSS, JavaScript)</li>
+                <li>Used Godot engine for game development</li>
+            </ul>
+            <p>
+                This website is also a training project to practice acquired skills
+            </p>
+            <br>
+            <p>
+                Additionally:
+            </p>
+            <ul>
+                <li>Russian - Native</li>
+                <li>English - B1 - Intermediate</li>
+                <li>German - A2 - Elementary</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

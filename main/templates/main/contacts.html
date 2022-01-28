@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/contacts.css' %}"/>
+{% endblock %}
+
+
+{% block title %}
+Contacts
+{% endblock %}
+
+
+{% block content %}
+<section class="section">
+    <div class="section_header">
+        <h2 class="section_title">Contacts</h2>
+    </div>
+    <div class="section_item">
+        <div class="section_text">gmail:<br> <b>archip.petin@gmail.com</b> <br> <p>or you can leave a message below:</p></div>
+    </div>
+
+    <section class="contact_form">
+        <div class="contact_wrapper">            
+            <form action="{% url 'contacts' %}" name="say_thanks" method="GET">
+
+                {% csrf_token %}
+
+                <div class="form_inputs">
+                    <p>Your name</p>
+                    <input type="text" name='author_name'>
+                </div>
+                <p>Message</p>
+                <textarea name='message_text'></textarea>
+                <div class="button_block">
+                    <input type="submit" value="SEND">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+</section>
+{% endblock %}

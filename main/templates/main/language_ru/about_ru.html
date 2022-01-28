@@ -1,0 +1,50 @@
+{% extends 'main/language_ru/base_ru.html' %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}"/>
+{% endblock %}
+
+{% block title %}
+Об авторе
+{% endblock %}
+
+{% block language %}
+	<a class ="nav__link" href="{% url 'about' %}">ENG</a>
+{% endblock language %}
+
+{% block content %}
+<section class="section">
+
+    <div class="section_header">
+        <h2 class="section_title">Обо мне</h2>
+    </div>
+    
+    <div class="section_item">
+        <div class="section_text">
+            <p>Меня зовут Петин Архип и я самостоятельно изучаю IT-сферу, мои основные знания сосредоточены в области backend-разработки. Из приобретенных навыков могу отметить:</p>
+            
+            <ul>
+                <li>Знание языка Python на уровне junior разработчика. В разработке использовал такие библиотеки, как: beautifulsoup, lxml, telebot, turtle, pandas и т.д.</li>
+                <li>Навыки работы с Django</li>
+                <li>Навыки работы с Linux, Bash, Git, SQl, Jupyter notebook</li>
+                <li>Опыт работы с HTML, CSS, JavaScript</li>
+                <li>Помимо этого использовал Godot engine для разработки игр</li>
+            </ul>
+            <p>
+                Этот веб-сайт также является учебным проектом для отработки приобретенных навыков.
+            </p>
+            <br>
+            <p>
+                Дополнительно:
+            </p>
+            <ul>
+                <li>Русский язык - Родной</li>
+                <li>Английский язык - B1 - Средний</li>
+                <li>Немецкий язык - A2 - Начальный</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

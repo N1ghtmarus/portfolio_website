@@ -1,0 +1,62 @@
+body {
+    background: url('../images/intros/cosmo1.png') no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project_header{
+    text-align: center;
+    font-size: 27px;
+    color: #fff;
+
+    margin-top: 110px;
+}
+
+.project_header:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto 60px;
+    background-color: #1f6ce0;
+}
+
+.screen{
+    position: absolute;
+    width: 30%;
+    padding: 5px;
+    margin-left: 600px;
+}
+
+ .screen_tg{
+    height: 650px;
+    width: 350px;
+    margin: auto;
+}
+
+.text_screen{
+    font-size: 18px;
+    max-width: 40%;
+    color: #fff;
+    margin: 160px 100px;
+}
+
+.github_link{
+    
+    color:#fff;
+    text-decoration: none;
+}
+
+.github_link:hover{
+    color: rgb(199, 199, 199);
+}
+
+.future_project{
+    margin-top: 370px;
+}

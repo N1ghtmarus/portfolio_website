@@ -1,0 +1,70 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'javascript/slick/slick.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'javascript/slick/slick-theme.css' %}"/>
+
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static '/javascript/projects.js' %}"></script>
+{% endblock %}
+
+{% block title %}
+Projects
+{% endblock %}
+
+{% block language %}
+	<a class ="nav__link" href="{% url 'projects_ru' %}">RU</a>
+{% endblock language %}
+
+{% block content %}
+  <div class="container">
+      <header>
+          <div class="project_header">
+          <h1>Timetable Telegram bot</h1>
+          </div>
+      </header>
+
+    <div class="screen">
+      <div class="screen_tg">
+        <div><img src="{% static 'images/screens/screen_telebot1.jpg' %}" alt="screen"></div>
+        <div><img src="{% static 'images/screens/screen_telebot2.jpg' %}" alt="screen"></div>
+        <div><img src="{% static 'images/screens/screen_telebot3.jpg' %}" alt="screen"></div>
+      </div>
+    </div> 
+
+    <article>
+      <div class='text_screen'>
+        <p>Timetable telegram bot - is a telegram bot created for quick and easy viewing of the schedule of classes at the URFU University for the FT-570101 group. The bot works in 3 stages:
+        </p>
+        <ol>
+          <li>First, the bot takes the user's request, which is formed using a special keyboard</li>
+          <li>Then the Bot turns to the official website of the university, parses the necessary schedule data for the group</li>
+          <li>Then he transfers information to the user</li>
+        </ol>
+
+        <p>
+          <b>
+            <a class="github_link" href="https://github.com/Nightmaruz/tametabele_bot" target="_blank">Github project page</a>
+          </b>
+        </p>
+      </div>
+    </article>
+
+    <header>
+      <div class="project_header">
+        <div class="future_project"> 
+          <h1>Future project =)</h1>
+        </div>
+      </div>
+    </header>
+  </div>  
+{% endblock %}

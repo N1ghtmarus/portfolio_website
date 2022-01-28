@@ -1,0 +1,96 @@
+{% extends 'main/language_ru/base_ru.html' %}
+
+{% block title %}
+Домашняя страница
+{% endblock %}
+
+{% block language %}
+	<a class ="nav__link" title="Switch to english version" href="{% url 'home' %}">ENG</a>
+{% endblock language %}
+
+{% block content %}
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class='intro__title'>Веб-сайт портфолио</h1>
+            <h2 class='intro__suptitle'>Петина Архипа</h2>
+
+        </div>
+        <div class="slider">
+            <div class="slider__item active">
+                <span class = 'slider__num'>1 </span>
+                <a href="{% url 'projects_ru'%}">Телеграм-бот</a>
+            </div>
+            <div class="slider__item">
+                <span class = 'slider__num'>2 </span>
+                Имя проекта
+            </div>
+            <div class="slider__item">
+                <span class = 'slider__num'>3 </span>
+                Имя проекта
+            </div>
+            <div class="slider__item">
+                <span class = 'slider__num'>4 </span>
+                Имя проекта
+            </div>
+        </div>
+    </div>
+</div> 
+
+<section class="section">
+	<div class="container">
+
+		<div class="section__header">
+			<h2 class="section__title">Мои навыки</h2>
+		</div>
+
+		<div class="services">
+			<div class="services__item">
+				<div class="services__title">Python</div>
+				<div class="services__text">Знание языка Python на уровне джуниор-разработчика.</div>
+			</div>
+
+			<div class="services__item">
+				<div class="services__title">HTML, CSS</div>
+				<div class="services__text">Базовые навыки работы с HTML, CSS</div>
+			</div>
+
+			<div class="services__item">
+				<div class="services__title">JavaScript</div>
+				<div class="services__text">Базовые навыки работы в JavaScript</div>
+			</div>
+		</div>
+
+
+		<div class="services">
+			<div class="services__item">
+				<div class="services__title">Django фреймворк</div>
+				<div class="services__text">Этот веб-сайт полностью сделан на Django! =)</div>
+			</div>
+
+			<div class="services__item">
+				<div class="services__title">SQL</div>
+				<div class="services__text">Обладаю навыками работы с SQL.</div>
+			</div>
+
+			<div class="services__item">
+				<div class="services__title">Другие навыки</div>
+				<div class="services__text">Linux, Bash, Git, SQl, Jupyter notebook.</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<section class="section section--devices">
+	<div class="container">
+
+		<div class="section__header">
+			<h3 class="section__suptitle">Разработано за период:</h3>
+			<h2 class ="section__title">второй квартал 2021</h2>
+		</div>
+
+	<div>
+</section>
+{% endblock %}

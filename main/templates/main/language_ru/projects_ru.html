@@ -1,0 +1,70 @@
+{% extends 'main/language_ru/base_ru.html' %}
+{% load static %}
+
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'javascript/slick/slick.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'javascript/slick/slick-theme.css' %}"/>
+
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static '/javascript/projects.js' %}"></script>
+{% endblock %}
+
+{% block title %}
+Проекты
+{% endblock %}
+
+{% block language %}
+	<a class ="nav__link" href="{% url 'projects' %}">ENG</a>
+{% endblock language %}
+
+{% block content %}
+  <div class="container">
+      <header>
+          <div class="project_header">
+          <h1>Телеграм бот</h1>
+          </div>
+      </header>
+
+    <div class="screen">
+      <div class="screen_tg">
+        <div><img src="{% static 'images/screens/screen_telebot1.jpg' %}" alt="screen"></div>
+        <div><img src="{% static 'images/screens/screen_telebot2.jpg' %}" alt="screen"></div>
+        <div><img src="{% static 'images/screens/screen_telebot3.jpg' %}" alt="screen"></div>
+      </div>
+    </div> 
+
+    <article>
+      <div class='text_screen'>
+        <p>Телеграмм бот для просмотра расписания - это бот, созданный для быстрого и удобного просмотра расписания занятий в университете УрФУ для группы ФТ-570101. Бот работает в 3 этапа:
+        </p>
+        <ol>
+          <li>Сначала бот принимает запрос пользователя, который формируется с помощью специальной клавиатуры в телеграме</li>
+          <li>Далее Бот обращается на официальный сайт вуза и парсит необходимые данные расписания для группы</li>
+          <li>Затем он передает информацию пользователю</li>
+        </ol>
+
+        <p>
+          <b>
+            <a class="github_link" href="https://github.com/Nightmaruz/tametabele_bot" target="_blank">Ссылка проекта на Github</a>
+          </b>
+        </p>
+      </div>
+    </article>
+
+    <header>
+      <div class="project_header">
+        <div class="future_project"> 
+          <h1>Будущие проекты =)</h1>
+        </div>
+      </div>
+    </header>
+  </div>  
+{% endblock %}
