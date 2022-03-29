@@ -27,6 +27,14 @@ body {
     background-color: #1f6ce0;
 }
 
+.project_header_tsk{
+    text-align: center;
+    font-size: 27px;
+    color: #fff;
+
+    margin-top: -100px;
+}
+
 .screen{
     position: absolute;
     width: 30%;
@@ -48,7 +56,6 @@ body {
 }
 
 .github_link{
-    
     color:#fff;
     text-decoration: none;
 }
@@ -59,4 +66,15 @@ body {
 
 .future_project{
     margin-top: 370px;
+}
+
+.screen_tsk_wrapper{
+    position: absolute;
+    width: 30%;
+    padding: 5px;
+    margin-left: 600px;
+}
+
+.screen_tasker{
+    margin: 140px 0px 0px 50px
 }

@@ -40,3 +40,13 @@ body {
 .section_text {
     font-size: 18px;
 }
+
+.github_link{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github_link:hover{
+    color: rgb(199, 199, 199);
+}

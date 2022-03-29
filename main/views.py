@@ -49,7 +49,7 @@ def say_thanks_ru(request):
     get_message = Message.objects.first()
     author_name = get_message.author_name
 
-    return render(request, 'main/language_ru/say_thanks_ru.html', {"author_name" : author_name}) 
+    return render(request, 'main/language_ru/say_thanks_ru.html', {"author_name" : author_name})
 
 def contacts_test_ru(request):
     if request.method == 'POST':
